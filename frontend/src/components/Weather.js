@@ -8,7 +8,7 @@ function Weather() {
   const getWeather = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5001/api/weather/${city}`
+        `http://localhost:5000/api/weather/${city}`
       );
       setWeather(res.data);
     } catch (error) {
